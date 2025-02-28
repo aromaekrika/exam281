@@ -3,7 +3,7 @@ from flask import Blueprint, render_template
 routes = Blueprint('routes', __name__)
 
 @routes.route('/')
-def home():
+def home(): # route for the home page
     return render_template('index.html')
 
 @routes.route('/about')
